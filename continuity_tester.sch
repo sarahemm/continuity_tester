@@ -9557,14 +9557,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R10" library="adafruit" deviceset="R-US_" device="R0603" value="470"/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="TP2" library="testpad" deviceset="TPS" device="B2,54" value="VCC"/>
+<part name="TP2" library="testpad" deviceset="TPS" device="B1,27" value="VCC"/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="TP1" library="testpad" deviceset="TPS" device="B2,54" value="GND"/>
+<part name="TP1" library="testpad" deviceset="TPS" device="B1,27" value="GND"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="TP3" library="testpad" deviceset="TPS" device="B2,54" value="TRIGGER"/>
-<part name="TP4" library="testpad" deviceset="TPS" device="B2,54" value="COMP-"/>
-<part name="TP5" library="testpad" deviceset="TPS" device="B2,54" value="OSC_THRESH_TRIG"/>
-<part name="TP6" library="testpad" deviceset="TPS" device="B2,54" value="OSC_CONTROL"/>
+<part name="TP3" library="testpad" deviceset="TPS" device="B1,27" value="TRIGGER"/>
+<part name="TP4" library="testpad" deviceset="TPS" device="B1,27" value="COMP-"/>
+<part name="TP5" library="testpad" deviceset="TPS" device="B1,27" value="OSC_THRESH_TRIG"/>
+<part name="TP6" library="testpad" deviceset="TPS" device="B1,27" value="OSC_CONTROL"/>
 <part name="FRAME1" library="logos-sen" deviceset="FRAME-LETTER-GRID-OSHW-SEN" device="OSHW-LOGO-L">
 <attribute name="REV" value="001"/>
 </part>
