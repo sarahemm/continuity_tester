@@ -9550,7 +9550,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0805" value="3.3uF"/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R7" library="adafruit" deviceset="R-US_" device="R0603" value="470"/>
 <part name="R8" library="adafruit" deviceset="R-US_" device="R0603" value="470"/>
 <part name="R9" library="adafruit" deviceset="R-US_" device="R0603" value="470"/>
@@ -9671,9 +9670,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="SUPPLY7" gate="G$1" x="58.42" y="-101.6" smashed="yes">
 <attribute name="VALUE" x="59.182" y="-98.298" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="144.78" y="-243.84" smashed="yes" rot="R90">
-<attribute name="VALUE" x="141.478" y="-243.078" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="R7" gate="G$1" x="137.16" y="-200.66" rot="R270"/>
 <instance part="R8" gate="G$1" x="147.32" y="-200.66" rot="R270"/>
 <instance part="R9" gate="G$1" x="157.48" y="-200.66" rot="R270"/>
@@ -9768,11 +9764,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="PZ1" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="-243.84" x2="144.78" y2="-243.84" width="0.1524" layer="91"/>
-<pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="-195.58" x2="167.64" y2="-193.04" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -9827,6 +9818,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="10.16" y="-231.14"/>
 <wire x1="17.78" y1="-193.04" x2="10.16" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-193.04" x2="10.16" y2="-200.66" width="0.1524" layer="91"/>
+<label x="9.144" y="-231.648" size="1.27" layer="95" ratio="10" rot="R90"/>
 </segment>
 <segment>
 <pinref part="TP5" gate="G$1" pin="PP"/>
@@ -9844,6 +9836,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="38.1" y1="-231.14" x2="38.1" y2="-208.28" width="0.1524" layer="91"/>
 <junction x="38.1" y="-208.28"/>
 <label x="40.64" y="-208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="PZ1" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="-243.84" x2="144.78" y2="-243.84" width="0.1524" layer="91"/>
+<label x="144.78" y="-243.84" size="1.27" layer="95" ratio="10" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9900,6 +9897,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="TR2" gate="G$1" pin="WIPER"/>
 <wire x1="45.72" y1="-213.36" x2="48.26" y2="-213.36" width="0.1524" layer="91"/>
 <junction x="45.72" y="-213.36"/>
+<label x="38.862" y="-212.598" size="1.016" layer="95" ratio="10"/>
 </segment>
 <segment>
 <pinref part="TP6" gate="G$1" pin="PP"/>
@@ -9934,6 +9932,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="-119.38" x2="15.24" y2="-111.76" width="0.1524" layer="91"/>
 <junction x="15.24" y="-119.38"/>
+<label x="28.194" y="-118.872" size="1.27" layer="95" ratio="10"/>
 </segment>
 <segment>
 <pinref part="TP4" gate="G$1" pin="PP"/>
@@ -10058,15 +10057,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,12.7,43.18,BATT1,-1,GND,,,"/>
-<approved hash="104,1,22.86,43.18,BATT1,+2,VCC_PRESWITCH,,,"/>
-<approved hash="202,1,144.78,33.02,U2,DIS,,,,"/>
-<approved hash="104,1,165.1,40.64,U2,VCC+,VCC,,,"/>
-<approved hash="104,1,165.1,25.4,U2,GND,GND_BUZZ,,,"/>
-<approved hash="113,1,84.0782,-19.05,LED1,,,,,"/>
-<approved hash="113,1,94.2382,-19.05,LED2,,,,,"/>
-<approved hash="113,1,104.398,-19.05,LED3,,,,,"/>
-<approved hash="113,1,114.558,-19.05,LED4,,,,,"/>
+<approved hash="104,1,137.16,-104.14,BATT1,-1,GND,,,"/>
+<approved hash="104,1,147.32,-104.14,BATT1,+2,VCC_PRESWITCH,,,"/>
+<approved hash="202,1,12.7,-208.28,U2,DIS,,,,"/>
+<approved hash="104,1,33.02,-200.66,U2,VCC+,VCC,,,"/>
+<approved hash="104,1,33.02,-215.9,U2,GND,GND_BUZZ,,,"/>
+<approved hash="113,1,137.418,-212.09,LED1,,,,,"/>
+<approved hash="113,1,147.578,-212.09,LED2,,,,,"/>
+<approved hash="113,1,157.738,-212.09,LED3,,,,,"/>
+<approved hash="113,1,167.898,-212.09,LED4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
