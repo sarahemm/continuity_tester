@@ -9535,7 +9535,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="BATT1" library="con-sen" deviceset="CR2032" device="" value="CR2032"/>
 <part name="PZ1" library="speaker-sen" deviceset="MURATA-PKMCS0909" device=""/>
 <part name="TR1" library="rcl-sen" deviceset="NIDEC-ST4EA" device="" value="1k"/>
-<part name="TR2" library="rcl-sen" deviceset="NIDEC-ST4EA" device="" value="10k"/>
 <part name="LED1" library="led-sen" deviceset="LITEON-LTST020" device=""/>
 <part name="LED2" library="led-sen" deviceset="LITEON-LTST020" device=""/>
 <part name="LED3" library="led-sen" deviceset="LITEON-LTST020" device=""/>
@@ -9552,9 +9551,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C3" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0603" value="100"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="R0603" value="100"/>
+<part name="R3" library="adafruit" deviceset="R-US_" device="R0603" value="22k"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R0603" value="220"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="R0603" value="220"/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0603" value="47k"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -9594,7 +9593,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <sheet>
 <plain>
 <text x="13.462" y="-236.728" size="1.27" layer="97">Frequency</text>
-<text x="57.658" y="-206.502" size="1.27" layer="97" rot="R270">Duty Cycle</text>
 <wire x1="149.86" y1="-248.92" x2="149.86" y2="-177.8" width="0.508" layer="97"/>
 <wire x1="149.86" y1="-177.8" x2="205.74" y2="-177.8" width="0.508" layer="97"/>
 <wire x1="205.74" y1="-177.8" x2="205.74" y2="-248.92" width="0.508" layer="97"/>
@@ -9636,10 +9634,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="18.542" y="-234.4674" size="1.778" layer="95"/>
 <attribute name="VALUE" x="13.97" y="-234.442" size="1.778" layer="96"/>
 </instance>
-<instance part="TR2" gate="G$1" x="53.34" y="-213.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.6674" y="-211.582" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="56.642" y="-217.17" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="LED1" gate="G$1" x="162.56" y="-210.82"/>
 <instance part="LED2" gate="G$1" x="172.72" y="-210.82"/>
 <instance part="LED3" gate="G$1" x="182.88" y="-210.82"/>
@@ -9661,9 +9655,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="37.973" y="-140.716" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="37.973" y="-134.112" size="1.524" layer="96" rot="R90"/>
 </instance>
-<instance part="C3" gate="G$1" x="63.5" y="-218.44" smashed="yes">
-<attribute name="NAME" x="65.913" y="-224.536" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="65.913" y="-217.932" size="1.524" layer="96" rot="R90"/>
+<instance part="C3" gate="G$1" x="53.34" y="-220.98" smashed="yes">
+<attribute name="NAME" x="55.753" y="-227.076" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="55.753" y="-220.472" size="1.524" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="35.56" y="-129.54" smashed="yes">
 <attribute name="VALUE" x="36.322" y="-126.238" size="1.778" layer="96" rot="R90"/>
@@ -9681,8 +9675,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="SUPPLY5" gate="G$1" x="35.56" y="-190.5" smashed="yes">
 <attribute name="VALUE" x="36.322" y="-187.198" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="63.5" y="-213.36" smashed="yes">
-<attribute name="VALUE" x="64.262" y="-210.058" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY6" gate="G$1" x="53.34" y="-213.36" smashed="yes">
+<attribute name="VALUE" x="54.102" y="-210.058" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R7" gate="G$1" x="162.56" y="-200.66" rot="R270"/>
 <instance part="R8" gate="G$1" x="172.72" y="-200.66" rot="R270"/>
@@ -9775,9 +9769,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="33.02" y1="-203.2" x2="35.56" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-203.2" x2="35.56" y2="-200.66" width="0.1524" layer="91"/>
 <junction x="35.56" y="-200.66"/>
-<pinref part="TR2" gate="G$1" pin="CW"/>
-<wire x1="35.56" y1="-200.66" x2="53.34" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-200.66" x2="53.34" y2="-208.28" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="-193.04" x2="35.56" y2="-193.04" width="0.1524" layer="91"/>
 <junction x="35.56" y="-193.04"/>
@@ -9786,7 +9777,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="-213.36" x2="63.5" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-213.36" x2="53.34" y2="-218.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -9957,9 +9948,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="-213.36" x2="45.72" y2="-213.36" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-213.36" x2="45.72" y2="-218.44" width="0.1524" layer="91"/>
-<pinref part="TR2" gate="G$1" pin="WIPER"/>
-<wire x1="45.72" y1="-213.36" x2="48.26" y2="-213.36" width="0.1524" layer="91"/>
-<junction x="45.72" y="-213.36"/>
 <label x="38.862" y="-212.598" size="1.016" layer="95" ratio="10"/>
 </segment>
 <segment>
@@ -10016,18 +10004,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="40.64" y1="-228.6" x2="45.72" y2="-228.6" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-228.6" x2="45.72" y2="-226.06" width="0.1524" layer="91"/>
 <junction x="40.64" y="-228.6"/>
-<pinref part="TR2" gate="G$1" pin="CCW"/>
-<wire x1="53.34" y1="-218.44" x2="53.34" y2="-228.6" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-228.6" x2="45.72" y2="-228.6" width="0.1524" layer="91"/>
 <junction x="45.72" y="-228.6"/>
 <wire x1="10.16" y1="-243.84" x2="40.64" y2="-243.84" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-243.84" x2="40.64" y2="-231.14" width="0.1524" layer="91"/>
 <junction x="10.16" y="-243.84"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="-223.52" x2="63.5" y2="-226.06" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-228.6" x2="63.5" y2="-228.6" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-228.6" x2="63.5" y2="-226.06" width="0.1524" layer="91"/>
-<junction x="53.34" y="-228.6"/>
+<wire x1="53.34" y1="-228.6" x2="53.34" y2="-226.06" width="0.1524" layer="91"/>
 <label x="10.16" y="-246.38" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
@@ -10155,10 +10138,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <approved hash="202,1,12.7,-208.28,U2,DIS,,,,"/>
 <approved hash="104,1,33.02,-200.66,U2,VCC+,VCC,,,"/>
 <approved hash="104,1,33.02,-215.9,U2,GND,GND_BUZZ,,,"/>
-<approved hash="113,1,137.418,-212.09,LED1,,,,,"/>
-<approved hash="113,1,147.578,-212.09,LED2,,,,,"/>
-<approved hash="113,1,157.738,-212.09,LED3,,,,,"/>
-<approved hash="113,1,167.898,-212.09,LED4,,,,,"/>
+<approved hash="104,1,193.04,-134.62,U1-PWR,V+,VCC,,,"/>
+<approved hash="104,1,193.04,-152.4,U1-PWR,V-,GND,,,"/>
+<approved hash="104,1,127,-198.12,U3,VCC+,VCC,,,"/>
+<approved hash="113,1,162.818,-212.09,LED1,,,,,"/>
+<approved hash="113,1,172.978,-212.09,LED2,,,,,"/>
+<approved hash="113,1,183.138,-212.09,LED3,,,,,"/>
+<approved hash="113,1,193.298,-212.09,LED4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
