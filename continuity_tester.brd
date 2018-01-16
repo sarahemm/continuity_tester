@@ -951,12 +951,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TP4" library="testpad" package="B1,27" value="COMP-" x="12.7" y="1.905" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="-25.4" y="60.325" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="TP5" library="testpad" package="B1,27" value="OSC_THRESH_TRIG" x="54.9275" y="8.89" rot="R180">
-<attribute name="TP_SIGNAL_NAME" value="" x="11.7475" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="TP6" library="testpad" package="B1,27" value="OSC_CONTROL" x="49.8475" y="2.54" rot="R270">
-<attribute name="TP_SIGNAL_NAME" value="" x="-8.5725" y="-45.72" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
 <element name="FRAME1" library="logos-sen" package="OSHW-LOGO-L" value="FRAME-LETTER-GRID-OSHW-SENOSHW-LOGO-L" x="74.295" y="4.445">
 <attribute name="REV" value="002" x="130.175" y="-45.085" size="1.778" layer="27" display="off"/>
 </element>
@@ -967,6 +961,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R11" library="adafruit" package="R0603" value="220k" x="-6.985" y="-5.715"/>
 <element name="C5" library="adafruit" package="C0603" value="1uF" x="-6.985" y="-10.795"/>
 <element name="C6" library="adafruit" package="C0603" value="0.1uF" x="-6.985" y="-15.875"/>
+<element name="C7" library="adafruit" package="C0603" value="0.1uF" x="-6.985" y="-20.955"/>
+<element name="TP5" library="testpad" package="B1,27" value="TRIGGER" x="-6.985" y="-26.67">
+<attribute name="TP_SIGNAL_NAME" value="" x="-6.985" y="-26.67" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC_PRESWITCH">
@@ -1058,6 +1056,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U3" pad="8"/>
 <contactref element="U3" pad="4"/>
 <contactref element="R11" pad="2"/>
+<contactref element="C7" pad="1"/>
 <wire x1="31.325" y1="23.285" x2="33.21" y2="24.785" width="0" layer="19" extent="1-1"/>
 <wire x1="31.115" y1="22.987" x2="31.325" y2="23.285" width="0" layer="19" extent="1-1"/>
 <wire x1="25.21" y1="24.785" x2="26.035" y2="22.6695" width="0" layer="19" extent="1-1"/>
@@ -1066,6 +1065,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="-3.81" y1="-1.3462" x2="3.433465625" y2="4.63555" width="0" layer="19" extent="1-16"/>
 <wire x1="-6.135" y1="-5.715" x2="-3.81" y2="-1.3462" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="3.8862" x2="-3.81" y2="-1.3462" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.835" y1="-20.955" x2="-6.135" y2="-5.715" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TR1_R2">
 <contactref element="TR1" pad="CW"/>
@@ -1084,7 +1084,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U2" pad="6"/>
 <contactref element="R1" pad="1"/>
 <contactref element="C4" pad="1"/>
-<contactref element="TP5" pad="TP"/>
 <wire x1="63.42" y1="7.62" x2="62.325" y2="7.525" width="0.4064" layer="1"/>
 <wire x1="62.325" y1="7.525" x2="58.5" y2="7.525" width="0.4064" layer="1"/>
 <wire x1="58.5" y1="7.525" x2="58.325" y2="6.35" width="0.4064" layer="1"/>
@@ -1099,7 +1098,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="48.26" y1="3.81" x2="48.26" y2="5.08" width="0.254" layer="1"/>
 <wire x1="48.26" y1="5.08" x2="48.895" y2="5.715" width="0.254" layer="1"/>
 <wire x1="48.895" y1="5.715" x2="50.2412" y2="5.715" width="0.254" layer="1"/>
-<wire x1="54.9275" y1="8.89" x2="53.2375" y2="8.89" width="0.4064" layer="1"/>
 <wire x1="53.2375" y1="8.89" x2="53.0225" y2="8.675" width="0.254" layer="1"/>
 <wire x1="33.655" y1="6.35" x2="33.655" y2="2.54" width="0.254" layer="1"/>
 <wire x1="33.655" y1="2.54" x2="34.417" y2="1.778" width="0.254" layer="1"/>
@@ -1145,6 +1143,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U3" pad="1"/>
 <contactref element="C6" pad="1"/>
 <contactref element="C5" pad="1"/>
+<contactref element="C7" pad="2"/>
+<wire x1="-7.835" y1="-15.875" x2="-6.135" y2="-20.955" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.835" y1="-10.795" x2="-7.835" y2="-15.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="-1.3462" x2="-7.835" y2="-10.795" width="0" layer="19" extent="1-1"/>
 <wire x1="6.985" y1="5.6125" x2="-7.62" y2="-1.3462" width="0" layer="19" extent="1-1"/>
@@ -1154,14 +1154,9 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="OSC_CONTROL">
 <contactref element="U2" pad="5"/>
 <contactref element="C1" pad="1"/>
-<contactref element="TP6" pad="TP"/>
 <wire x1="53.0225" y1="3.39" x2="51.2962" y2="3.39" width="0.4064" layer="1"/>
 <wire x1="51.2962" y1="3.39" x2="50.2412" y2="4.445" width="0.4064" layer="1"/>
-<wire x1="49.8475" y1="2.54" x2="49.8475" y2="4.0513" width="0.4064" layer="1"/>
 <wire x1="49.8475" y1="4.0513" x2="50.2412" y2="4.445" width="0.4064" layer="1"/>
-<wire x1="29.035" y1="3.35" x2="31.115" y2="1.27" width="0.4064" layer="1"/>
-<wire x1="31.115" y1="1.27" x2="48.5775" y2="1.27" width="0.4064" layer="1"/>
-<wire x1="48.5775" y1="1.27" x2="49.8475" y2="2.54" width="0.4064" layer="1"/>
 </signal>
 <signal name="PROBE_RED">
 <contactref element="R3" pad="2"/>
@@ -1284,12 +1279,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.728540625" y1="27.851565625" x2="4.728540625" y2="29.358484375" width="0.4064" layer="1"/>
 <wire x1="4.728540625" y1="29.358484375" x2="1.453190625" y2="27.542665625" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$1">
+<signal name="U3-CON">
 <contactref element="U3" pad="5"/>
 <contactref element="C6" pad="2"/>
 <wire x1="-3.81" y1="3.8862" x2="-6.135" y2="-15.875" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$2">
+<signal name="U3-TREDIS">
 <contactref element="U3" pad="6"/>
 <contactref element="C5" pad="2"/>
 <contactref element="U3" pad="7"/>
@@ -1301,7 +1296,9 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="MID-TRIGGER">
 <contactref element="U3" pad="2"/>
 <contactref element="U1" pad="1"/>
-<wire x1="-6.35" y1="-1.3462" x2="13.6191" y2="3.749" width="0" layer="19" extent="1-1"/>
+<contactref element="TP5" pad="TP"/>
+<wire x1="-6.35" y1="-1.3462" x2="-6.985" y2="-26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="13.6191" y1="3.749" x2="-6.35" y2="-1.3462" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
