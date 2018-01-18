@@ -9587,7 +9587,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C7" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="TP5" library="testpad" deviceset="TPS" device="B1,27" value="TRIGGER"/>
+<part name="TP5" library="testpad" deviceset="TPS" device="B1,27" value="MID-TRIGGER"/>
 </parts>
 <sheets>
 <sheet>
